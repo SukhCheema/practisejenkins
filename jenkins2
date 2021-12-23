@@ -2,27 +2,28 @@ pipeline{
 agent any;
 options { buildDiscarder(logRotator(numToKeepStr: '3')) }
 stages{
-stage(' Git Checkout'){
+stage('Git Checkout'){
 step{
 sh 'echo Checkout'
 }
 }
-stage(' Git'){
+stage('Git'){
 step{
 sh 'echo Step2'
 sh 'sleep 10'
 }
 }
-stage(' Git 2'){
+stage('Git 2'){
 step{
 sh 'echo step3'
 sh 'sleep 10'
 }
 }
-stage(' Git 3'){
+stage('Git 3'){
 step{
 sh 'echo step4'
 sh 'sleep 10'
 }
 }
-}}
+}
+}
