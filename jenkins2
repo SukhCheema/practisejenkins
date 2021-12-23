@@ -4,25 +4,25 @@ pipeline
     options { buildDiscarder(logRotator(numToKeepStr: '3')) }
     stages{
         stage('Git Checkout'){
-            step{
+            steps{
                 sh 'echo Checkout'
                 }
                 }
                 stage('Git'){
-                    step{
+                    steps{
                         sh 'echo Step2'
                         sh 'sleep 10'
                         }
                         }
                         stage('Git 2'){
-                            step{
+                            steps{
                                 sh 'echo step3'
                                 sh 'sleep 10'
                                 }
                                 }
                                 stage('Git 3')
                                 {
-                                    step{
+                                    steps{
                                         sh 'echo step4'
                                         sh 'sleep 10'
                                         }
