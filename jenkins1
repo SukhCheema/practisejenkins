@@ -1,18 +1,18 @@
 node{
 stage('Git checkout'){
 sh 'echo checkout'
-sh 'sleep 10'
+sh 'sleep 7'
 }
 stage('Unit testing'){
 sh 'echo UT'
-sh 'sleep 10'
+sh 'sleep 7'
 }
 stage('Code Quality'){
 sh 'echo QA'
-sh 'sleep 10'
+sh 'sleep 7'
 }
 stage('Integration'){
 sh 'echo INT'
-sh 'sleep 10'
+sh 'sleep 7'
 }
 }
